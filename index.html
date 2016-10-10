@@ -3,8 +3,43 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Тестовое задание</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js.js"></script>
 </head>
 <body>
-	<input id="name" type="text">
+	<form name="calc">
+		<p>Пол</p>
+		<select name="sex" id="sex">
+			<option value="male">М</option>
+			<option value="female">Ж</option>	
+		</select>
+		<p>Возраст</p>
+		<select name="age" id="age">
+			<option value="18-49">18-49</option>
+			<option value="50-59">50-59</option>
+			<option value=">=60">>=60</option>
+		</select>
+		<p>Клиника</p>
+		<select name="clinic" id="clinic">
+			<option value="base">base</option>
+			<option value="pro">pro</option>
+			<option value="max">max</option>
+		</select>
+		<p>Стационарная помощь</p>
+		<select name="help" id="help">
+			<option value="none">Не выбрано</option>
+			<option value="">base</option>
+			<option value="">pro</option>
+		</select>
+		<p>Стоматология</p>
+		<select name="stom" id="stom">
+			<option value="none">Не выбрано</option>
+			<option value="base">base</option>
+			<option value="pro">pro</option>
+		</select>	
+		<p>
+			<input type="submit" value="Рассчитать" onclick="calcul()">
+		</p>
+	</form>
 </body>
 </html> 
